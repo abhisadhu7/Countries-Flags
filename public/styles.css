@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+h3 {
+  font-size: 16px;
+}
+p {
+  font-size: 12px;
+}
+body {
+  background-color: hsl(207, 26%, 17%);
+}
+.navbar {
+  background-color: hsl(209, 25%, 31%);
+  color: hsl(0, 0%, 100%);
+  font-size: 18;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  margin-top: 0.75rem;
+}
+/* Country badges ********************************************** */
+.main-page {
+  margin: 4rem 1rem 0rem 1rem;
+}
+.country-badge {
+  width: 15rem;
+  height: 20rem;
+  display: inline-block;
+  margin: 2rem 3.5rem;
+  text-align: left;
+  color: white;
+  background-color: hsl(209, 23%, 22%);
+  overflow: hidden;
+  border-radius: 0.3rem;
+}
+.country-badge img {
+  width: 15rem;
+  height: 10rem;
+  object-fit: cover;
+  object-position: center;
+}
+.country-items {
+  padding: 1rem;
+}
+/* searchbar******************************************************** */
+.search-bar {
+  background-color: hsl(209, 23%, 22%);
+  display: inline-block;
+  padding: 1rem;
+  margin: 2rem 4rem 0rem 4rem;
+  border-radius: 0.4rem;
+}
+input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-left: 1rem;
+  margin-right: 12rem;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: white;
+}
+input::-ms-input-placeholder {
+  color: white;
+}
+
+/* Filter options ************************************************** */
+.filter {
+  position: relative;
+  display: inline-block;
+  margin-left: 42rem;
+  margin-top: 2rem;
+  width: 10rem;
+}
+.filter-button {
+  width: 10rem;
+  background-color: hsl(209, 23%, 22%);
+  border: none;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.2rem;
+  font-weight: 200;
+}
+.filter button {
+  width: 10rem;
+  border: none;
+  color: white;
+  background-color: hsl(209, 23%, 22%);
+}
+
+.dropdown-content {
+  position: absolute;
+  width: 10rem;
+  background-color: hsl(209, 23%, 22%);
+  margin-top: 0.2rem;
+  border-radius: 0.3rem;
+  display: none;
+}
+.dropdown-content a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-top: 0.3rem;
+}
+.filter:hover .dropdown-content {
+  display: block;
+}
